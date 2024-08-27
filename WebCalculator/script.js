@@ -34,3 +34,7 @@ function changeMode(){
         console.log("Error")
     };
 };
+
+function addInput(num){
+    document.querySelector("#user-input").innerHTML += num
+};
