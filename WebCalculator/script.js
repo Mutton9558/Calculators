@@ -4,7 +4,7 @@ function showProgress(){
 
 function changeMode(){
     const MODEBTN = document.querySelector("#btn-mode");
-    if (MODEBTN.innerHTML == "Toggle Dark Mode"){
+    if (MODEBTN.innerHTML == "Toggle Dark Mode🌙"){
         document.querySelector("#color-mode").innerHTML = `
         * {
             font-family: 'Roboto Mono';
@@ -16,8 +16,8 @@ function changeMode(){
             padding:0;
         }
         `;
-        MODEBTN.innerHTML = "Toggle Light Mode";
-    } else if (MODEBTN.innerHTML == "Toggle Light Mode"){
+        MODEBTN.innerHTML = "Toggle Light Mode☀️";
+    } else if (MODEBTN.innerHTML == "Toggle Light Mode☀️"){
         document.querySelector("#color-mode").innerHTML = `
         * {
             font-family: 'Roboto Mono';
@@ -29,12 +29,23 @@ function changeMode(){
             padding:0;
         }
         `;
-        MODEBTN.innerHTML = "Toggle Dark Mode";
+        MODEBTN.innerHTML = "Toggle Dark Mode🌙";
     } else {
-        console.log("Error")
+        console.log("Error");
     };
 };
 
 function addInput(num){
-    document.querySelector("#user-input").innerHTML += num
+    document.querySelector("#user-input").innerHTML += num;
 };
+
+function calculate(){
+    var input = document.querySelector("#user-input").innerHTML;
+    try{
+        var ans = eval(input)
+        console.log(ans)
+        document.querySelector("#user-input").innerHTML = ans
+    } catch (e) {
+        document.querySelector("#user-input").innerHTML = "Error"
+    }
+}
