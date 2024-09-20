@@ -36,7 +36,7 @@ def clear_field():
     calculation = ""
     text_result.delete(1.0, "end")
 
-# self explanatory
+# creates window
 root = tk.Tk()
 # for the image use your own file source below is merely an example
 img = PhotoImage(file='C:/folder/calculator_icon.png')
