@@ -1,0 +1,5 @@
+Prototype will be text-based and will be coverted to GUI soon.
+Plans to improve prototype:
+1. Display current number involved in calculation
+2. Allow multiple calculations at once
+3. History feature
