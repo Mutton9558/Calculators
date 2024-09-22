@@ -41,10 +41,12 @@ int addition(){
             }
         }
     }
+    return num1;
 }
 
 int main(){
     int choice;
+    int num;
     bool selection = true;
     
     while (selection){
@@ -63,7 +65,7 @@ int main(){
             case 1:
                 std::cout << "You chose Addition!" << std::endl;
                 selection = false;
-                addition();
+                num = addition();
                 break;
             case 2:
                 std::cout << "You chose Subtraction!" << std::endl;
